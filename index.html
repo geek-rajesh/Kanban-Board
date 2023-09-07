@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kanban Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="toolbar-container">
+        <div class="toolbar-priority-container">
+          <div class="priority">
+            <div class="critical">Critical</div>
+            <div class="high">High</div>
+            <div class="modarate">Modarate</div>
+            <div class="low">Low</div>
+          </div>
+          <div></div>
+        </div>
+        <div class="action-btn">
+          <div class="add-btn">
+            <i class="fa-solid fa-plus largeicon"></i>
+          </div>
+          <div class="remove-btn">
+            <i class="fa-solid fa-trash largeicon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="ticket-container"></div>
+
+      <div class="modal">
+        <textarea class="textarea" placeholder="Enter your Text"></textarea>
+        <div class="modal-color-container">
+          <div class="modal-color red selected" curCol="red"></div>
+          <div class="modal-color orange" curCol="orange"></div>
+          <div class="modal-color green" curCol="green"></div>
+          <div class="modal-color grey" curCol="grey"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@5.0.2/dist/short-unique-id.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
